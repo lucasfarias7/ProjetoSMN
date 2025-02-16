@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Ínicio";
+}
+
+<div class="flex flex-col items-center justify-center min-h-[80vh] text-center px-6">
+    <!-- Título e descrição -->
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">Bem-vindo ao SMNPastel</h1>
+    <p class="text-lg text-gray-600 mb-8">
+        Gerencie suas tarefas de forma simples e eficiente.
+    </p>
+
+    <!-- Card de Introdução -->
+    <div class="bg-white shadow-lg rounded-lg p-6 max-w-lg w-full">
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Comece agora</h2>
+        <p class="text-gray-600 mb-4">
+            Crie tarefas e acompanhe seu progresso de maneira intuitiva e organizada.
+        </p>
+        <a href="@Url.Action("Index", "Tarefa")" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+            Tarefas
+        </a>
+    </div>   
+</div>

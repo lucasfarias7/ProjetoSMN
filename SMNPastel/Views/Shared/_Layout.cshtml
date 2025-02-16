@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SMNPastel</title>
+    <link rel="stylesheet" href="~/css/styles.component.css" asp-append-version="true" />
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">            
+            <a href="/" class="text-xl font-bold text-gray-900">SMNPastel</a>
+            
+            <button id="menu-toggle" class="md:hidden text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <a href="/" class="text-gray-700 hover:text-blue-600 transition">Início</a>
+                <a href="@Url.Action("Index", "Tarefa")" class="text-gray-700 hover:text-blue-600 transition">Tarefas</a>
+                <a href="@Url.Action("Logout", "Home", new { Area = "Login"})" class="text-gray-700 hover:text-blue-600 transition">Sair</a>
+            </nav>
+        </div>
+        
+        <div id="mobile-menu" class="hidden bg-white md:hidden flex flex-col space-y-2 p-4 border-t">
+            <a href="/" class="text-gray-700 hover:text-blue-600 transition">Início</a>
+            <a href="@Url.Action("Index", "Tarefa")" class="text-gray-700 hover:text-blue-600 transition">Tarefas</a>
+            <a href="@Url.Action("Logout", "Home", new { Area = "Login"})" class="text-gray-700 hover:text-blue-600 transition">Sair</a>
+        </div>
+    </header>
+    
+    <main class="container mx-auto px-6 py-8">
+        @RenderBody()
+    </main>
+    
+    <footer class="bg-white shadow-md py-4 fixed bottom-0 w-full text-center text-gray-600 text-sm">
+        &copy; 2025 SMNPastel. Todos os direitos reservados.
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/lucide.js"></script>
+    <script src="~/js/micromodal.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <!-- Script para Menu Responsivo -->
+    <script>
+        lucide.createIcons();        
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+

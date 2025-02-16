@@ -1,0 +1,48 @@
+﻿@using SMNPastel.Models.Domain
+@model IEnumerable<Tarefa>
+
+@{
+    ViewData["Title"] = "Lista de Tarefas";
+}
+
+<div class="max-w-4xl mx-auto bg-white p-6 shadow-md rounded-lg">
+    <h2 class="text-2xl font-bold mb-4">Lista de Tarefas</h2>
+
+    <a asp-action="CriarTarefa" class="mb-4 inline-block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+         Criar Nova Tarefa
+    </a>
+
+    <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="px-4 py-2 text-left border-b">Mensagem</th>
+                    <th class="px-4 py-2 text-left border-b">Data Limite</th>
+                    <th class="px-4 py-2 text-left border-b">Subordinado</th>
+                    <th class="px-4 py-2 text-center border-b">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var tarefa in Model)
+                {
+                    <tr class="border-b">
+                        <td class="px-4 py-2">@tarefa.Mensagem</td>
+                        <td class="px-4 py-2">@tarefa.DataLimite?.ToString("dd/MM/yyyy")</td>
+                        <td class="px-4 py-2">@tarefa.Subordinado?.Nome</td>
+                        <td class="px-4 py-2 text-center">
+                            <a asp-action="Editar" asp-route-id="@tarefa.Id" asp-controller="Tarefa" class="text-blue-600 hover:underline mr-2">
+                                Editar
+                            </a>
+                            <form action="@Url.Action("Excluir", "Tarefa", new { id = tarefa.Id })" method="post" style="display:inline">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="text-blue-600 hover:underline mr-2">
+                                    Excluir
+                                </button>
+                            </form>                            
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

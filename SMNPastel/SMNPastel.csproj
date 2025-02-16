@@ -1,0 +1,404 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>95c31cb3-8cdb-4010-b85d-2c875830f751</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net7.0\SMNPastel.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net7.0\SMNPastel.GlobalUsings.g.cs" />
+    <Compile Include="obj\Debug\net7.0\SMNPastel.RazorAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net7.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net7.0\appsettings.json" />
+    <Content Include="bin\Debug\net7.0\SMNPastel.deps.json" />
+    <Content Include="bin\Debug\net7.0\SMNPastel.runtimeconfig.json" />
+    <Content Include="bin\Debug\net7.0\SMNPastel.staticwebassets.endpoints.json" />
+    <Content Include="bin\Debug\net7.0\SMNPastel.staticwebassets.runtime.json" />
+    <Content Include="bin\Debug\net7.0\tw\package-lock.json" />
+    <Content Include="bin\Debug\net7.0\tw\package.json" />
+    <Content Include="obj\Debug\net7.0\ApiEndpoints.json" />
+    <Content Include="obj\Debug\net7.0\scopedcss\bundle\SMNPastel.styles.css" />
+    <Content Include="obj\Debug\net7.0\scopedcss\projectbundle\SMNPastel.bundle.scp.css" />
+    <Content Include="obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css" />
+    <Content Include="obj\Debug\net7.0\SMNPastel.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net7.0\staticwebassets.build.endpoints.json" />
+    <Content Include="obj\Debug\net7.0\staticwebassets.build.json" />
+    <Content Include="obj\Debug\net7.0\staticwebassets.development.json" />
+    <Content Include="obj\Debug\net7.0\staticwebassets.pack.json" />
+    <Content Include="obj\Debug\net7.0\staticwebassets.references.upToDateCheck.txt" />
+    <Content Include="obj\Debug\net7.0\staticwebassets.removed.txt" />
+    <Content Include="obj\Debug\net7.0\staticwebassets.upToDateCheck.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\SMNPastel.csproj.nuget.dgspec.json" />
+    <Content Include="tw\node_modules\%40parcel\watcher-win32-x64\package.json" />
+    <Content Include="tw\node_modules\%40parcel\watcher\package.json" />
+    <Content Include="tw\node_modules\%40tailwindcss\cli\package.json" />
+    <Content Include="tw\node_modules\%40tailwindcss\node\package.json" />
+    <Content Include="tw\node_modules\%40tailwindcss\oxide-win32-x64-msvc\package.json" />
+    <Content Include="tw\node_modules\%40tailwindcss\oxide\package.json" />
+    <Content Include="tw\node_modules\.package-lock.json" />
+    <Content Include="tw\node_modules\braces\package.json" />
+    <Content Include="tw\node_modules\detect-libc\package.json" />
+    <Content Include="tw\node_modules\enhanced-resolve\package.json" />
+    <Content Include="tw\node_modules\fill-range\package.json" />
+    <Content Include="tw\node_modules\graceful-fs\package.json" />
+    <Content Include="tw\node_modules\is-extglob\package.json" />
+    <Content Include="tw\node_modules\is-glob\package.json" />
+    <Content Include="tw\node_modules\is-number\package.json" />
+    <Content Include="tw\node_modules\jiti\package.json" />
+    <Content Include="tw\node_modules\lightningcss-win32-x64-msvc\package.json" />
+    <Content Include="tw\node_modules\lightningcss\package.json" />
+    <Content Include="tw\node_modules\micromatch\package.json" />
+    <Content Include="tw\node_modules\mri\package.json" />
+    <Content Include="tw\node_modules\node-addon-api\package-support.json" />
+    <Content Include="tw\node_modules\node-addon-api\package.json" />
+    <Content Include="tw\node_modules\picocolors\package.json" />
+    <Content Include="tw\node_modules\picomatch\package.json" />
+    <Content Include="tw\node_modules\tailwindcss\index.css" />
+    <Content Include="tw\node_modules\tailwindcss\package.json" />
+    <Content Include="tw\node_modules\tailwindcss\preflight.css" />
+    <Content Include="tw\node_modules\tailwindcss\theme.css" />
+    <Content Include="tw\node_modules\tailwindcss\utilities.css" />
+    <Content Include="tw\node_modules\tapable\package.json" />
+    <Content Include="tw\node_modules\to-regex-range\package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
+    <PackageReference Include="NonFactors.Grid.Mvc6" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net7.0\SMNPastel.dll" />
+    <None Include="bin\Debug\net7.0\SMNPastel.exe" />
+    <None Include="bin\Debug\net7.0\SMNPastel.pdb" />
+    <None Include="obj\Debug\net7.0\apphost.exe" />
+    <None Include="obj\Debug\net7.0\refint\SMNPastel.dll" />
+    <None Include="obj\Debug\net7.0\ref\SMNPastel.dll" />
+    <None Include="obj\Debug\net7.0\SMNPastel.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net7.0\SMNPastel.assets.cache" />
+    <None Include="obj\Debug\net7.0\SMNPastel.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net7.0\SMNPastel.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net7.0\SMNPastel.dll" />
+    <None Include="obj\Debug\net7.0\SMNPastel.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net7.0\SMNPastel.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net7.0\SMNPastel.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\net7.0\SMNPastel.pdb" />
+    <None Include="obj\Debug\net7.0\SMNPastel.RazorAssemblyInfo.cache" />
+    <None Include="obj\Debug\net7.0\staticwebassets\msbuild.build.SMNPastel.props" />
+    <None Include="obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.SMNPastel.props" />
+    <None Include="obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.SMNPastel.props" />
+    <None Include="obj\Debug\net7.0\staticwebassets\msbuild.SMNPastel.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" />
+    <None Include="obj\Debug\net7.0\staticwebassets\msbuild.SMNPastel.Microsoft.AspNetCore.StaticWebAssets.props" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\SMNPastel.csproj.nuget.g.props" />
+    <None Include="obj\SMNPastel.csproj.nuget.g.targets" />
+    <None Include="tw\node_modules\%40parcel\watcher-win32-x64\LICENSE" />
+    <None Include="tw\node_modules\%40parcel\watcher-win32-x64\README.md" />
+    <None Include="tw\node_modules\%40parcel\watcher-win32-x64\watcher.node" />
+    <None Include="tw\node_modules\%40parcel\watcher\binding.gyp" />
+    <None Include="tw\node_modules\%40parcel\watcher\index.js" />
+    <None Include="tw\node_modules\%40parcel\watcher\index.js.flow" />
+    <None Include="tw\node_modules\%40parcel\watcher\LICENSE" />
+    <None Include="tw\node_modules\%40parcel\watcher\README.md" />
+    <None Include="tw\node_modules\%40parcel\watcher\scripts\build-from-source.js" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Backend.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Backend.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\binding.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Debounce.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Debounce.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\DirTree.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\DirTree.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Event.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Glob.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Glob.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\kqueue\KqueueBackend.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\kqueue\KqueueBackend.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\linux\InotifyBackend.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\linux\InotifyBackend.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\macos\FSEventsBackend.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\macos\FSEventsBackend.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\PromiseRunner.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\shared\BruteForceBackend.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\shared\BruteForceBackend.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Signal.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\unix\fts.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\unix\legacy.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\wasm\include.h" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\wasm\WasmBackend.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\wasm\WasmBackend.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Watcher.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\Watcher.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\watchman\BSER.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\watchman\BSER.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\watchman\IPC.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\watchman\WatchmanBackend.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\watchman\WatchmanBackend.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\windows\WindowsBackend.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\windows\WindowsBackend.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\windows\win_utils.cc" />
+    <None Include="tw\node_modules\%40parcel\watcher\src\windows\win_utils.hh" />
+    <None Include="tw\node_modules\%40parcel\watcher\wrapper.js" />
+    <None Include="tw\node_modules\%40tailwindcss\cli\dist\index.mjs" />
+    <None Include="tw\node_modules\%40tailwindcss\cli\LICENSE" />
+    <None Include="tw\node_modules\%40tailwindcss\cli\README.md" />
+    <None Include="tw\node_modules\%40tailwindcss\node\dist\esm-cache.loader.d.mts" />
+    <None Include="tw\node_modules\%40tailwindcss\node\dist\esm-cache.loader.mjs" />
+    <None Include="tw\node_modules\%40tailwindcss\node\dist\index.d.mts" />
+    <None Include="tw\node_modules\%40tailwindcss\node\dist\index.js" />
+    <None Include="tw\node_modules\%40tailwindcss\node\dist\index.mjs" />
+    <None Include="tw\node_modules\%40tailwindcss\node\dist\require-cache.js" />
+    <None Include="tw\node_modules\%40tailwindcss\node\LICENSE" />
+    <None Include="tw\node_modules\%40tailwindcss\node\README.md" />
+    <None Include="tw\node_modules\%40tailwindcss\oxide-win32-x64-msvc\LICENSE" />
+    <None Include="tw\node_modules\%40tailwindcss\oxide-win32-x64-msvc\README.md" />
+    <None Include="tw\node_modules\%40tailwindcss\oxide-win32-x64-msvc\tailwindcss-oxide.win32-x64-msvc.node" />
+    <None Include="tw\node_modules\%40tailwindcss\oxide\index.js" />
+    <None Include="tw\node_modules\%40tailwindcss\oxide\LICENSE" />
+    <None Include="tw\node_modules\.bin\detect-libc" />
+    <None Include="tw\node_modules\.bin\detect-libc.cmd" />
+    <None Include="tw\node_modules\.bin\detect-libc.ps1" />
+    <None Include="tw\node_modules\.bin\jiti" />
+    <None Include="tw\node_modules\.bin\jiti.cmd" />
+    <None Include="tw\node_modules\.bin\jiti.ps1" />
+    <None Include="tw\node_modules\.bin\tailwindcss" />
+    <None Include="tw\node_modules\.bin\tailwindcss.cmd" />
+    <None Include="tw\node_modules\.bin\tailwindcss.ps1" />
+    <None Include="tw\node_modules\braces\index.js" />
+    <None Include="tw\node_modules\braces\lib\compile.js" />
+    <None Include="tw\node_modules\braces\lib\constants.js" />
+    <None Include="tw\node_modules\braces\lib\expand.js" />
+    <None Include="tw\node_modules\braces\lib\parse.js" />
+    <None Include="tw\node_modules\braces\lib\stringify.js" />
+    <None Include="tw\node_modules\braces\lib\utils.js" />
+    <None Include="tw\node_modules\braces\LICENSE" />
+    <None Include="tw\node_modules\braces\README.md" />
+    <None Include="tw\node_modules\detect-libc\.npmignore" />
+    <None Include="tw\node_modules\detect-libc\bin\detect-libc.js" />
+    <None Include="tw\node_modules\detect-libc\lib\detect-libc.js" />
+    <None Include="tw\node_modules\detect-libc\LICENSE" />
+    <None Include="tw\node_modules\detect-libc\README.md" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\AliasFieldPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\AliasPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\AppendPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\CloneBasenamePlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ConditionalPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\createInnerContext.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ExportsFieldPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ExtensionAliasPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\FileExistsPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\forEachBail.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\getInnerRequest.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\getPaths.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ImportsFieldPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\index.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\JoinRequestPartPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\JoinRequestPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\LogInfoPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\MainFieldPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ModulesInHierachicDirectoriesPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ModulesInHierarchicalDirectoriesPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ModulesInRootPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\NextPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ParsePlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\PnpPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\Resolver.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ResolverFactory.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\RestrictionsPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\ResultPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\RootsPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\SelfReferencePlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\SymlinkPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\SyncAsyncFileSystemDecorator.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\TryNextPlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\UnsafeCachePlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\UseFilePlugin.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\util\entrypoints.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\util\identifier.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\util\module-browser.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\util\path.js" />
+    <None Include="tw\node_modules\enhanced-resolve\lib\util\process-browser.js" />
+    <None Include="tw\node_modules\enhanced-resolve\LICENSE" />
+    <None Include="tw\node_modules\enhanced-resolve\README.md" />
+    <None Include="tw\node_modules\fill-range\index.js" />
+    <None Include="tw\node_modules\fill-range\LICENSE" />
+    <None Include="tw\node_modules\fill-range\README.md" />
+    <None Include="tw\node_modules\graceful-fs\clone.js" />
+    <None Include="tw\node_modules\graceful-fs\graceful-fs.js" />
+    <None Include="tw\node_modules\graceful-fs\legacy-streams.js" />
+    <None Include="tw\node_modules\graceful-fs\LICENSE" />
+    <None Include="tw\node_modules\graceful-fs\polyfills.js" />
+    <None Include="tw\node_modules\graceful-fs\README.md" />
+    <None Include="tw\node_modules\is-extglob\index.js" />
+    <None Include="tw\node_modules\is-extglob\LICENSE" />
+    <None Include="tw\node_modules\is-extglob\README.md" />
+    <None Include="tw\node_modules\is-glob\index.js" />
+    <None Include="tw\node_modules\is-glob\LICENSE" />
+    <None Include="tw\node_modules\is-glob\README.md" />
+    <None Include="tw\node_modules\is-number\index.js" />
+    <None Include="tw\node_modules\is-number\LICENSE" />
+    <None Include="tw\node_modules\is-number\README.md" />
+    <None Include="tw\node_modules\jiti\dist\babel.cjs" />
+    <None Include="tw\node_modules\jiti\dist\jiti.cjs" />
+    <None Include="tw\node_modules\jiti\lib\jiti-cli.mjs" />
+    <None Include="tw\node_modules\jiti\lib\jiti-hooks.mjs" />
+    <None Include="tw\node_modules\jiti\lib\jiti-native.mjs" />
+    <None Include="tw\node_modules\jiti\lib\jiti-register.d.mts" />
+    <None Include="tw\node_modules\jiti\lib\jiti-register.mjs" />
+    <None Include="tw\node_modules\jiti\lib\jiti.cjs" />
+    <None Include="tw\node_modules\jiti\lib\jiti.d.cts" />
+    <None Include="tw\node_modules\jiti\lib\jiti.d.mts" />
+    <None Include="tw\node_modules\jiti\lib\jiti.mjs" />
+    <None Include="tw\node_modules\jiti\LICENSE" />
+    <None Include="tw\node_modules\jiti\README.md" />
+    <None Include="tw\node_modules\lightningcss-win32-x64-msvc\LICENSE" />
+    <None Include="tw\node_modules\lightningcss-win32-x64-msvc\lightningcss.win32-x64-msvc.node" />
+    <None Include="tw\node_modules\lightningcss-win32-x64-msvc\README.md" />
+    <None Include="tw\node_modules\lightningcss\LICENSE" />
+    <None Include="tw\node_modules\lightningcss\node\ast.js.flow" />
+    <None Include="tw\node_modules\lightningcss\node\browserslistToTargets.js" />
+    <None Include="tw\node_modules\lightningcss\node\composeVisitors.js" />
+    <None Include="tw\node_modules\lightningcss\node\flags.js" />
+    <None Include="tw\node_modules\lightningcss\node\index.js" />
+    <None Include="tw\node_modules\lightningcss\node\index.js.flow" />
+    <None Include="tw\node_modules\lightningcss\node\index.mjs" />
+    <None Include="tw\node_modules\lightningcss\node\targets.js.flow" />
+    <None Include="tw\node_modules\lightningcss\README.md" />
+    <None Include="tw\node_modules\micromatch\index.js" />
+    <None Include="tw\node_modules\micromatch\LICENSE" />
+    <None Include="tw\node_modules\micromatch\README.md" />
+    <None Include="tw\node_modules\mri\lib\index.js" />
+    <None Include="tw\node_modules\mri\lib\index.mjs" />
+    <None Include="tw\node_modules\mri\license.md" />
+    <None Include="tw\node_modules\mri\readme.md" />
+    <None Include="tw\node_modules\node-addon-api\common.gypi" />
+    <None Include="tw\node_modules\node-addon-api\except.gypi" />
+    <None Include="tw\node_modules\node-addon-api\index.js" />
+    <None Include="tw\node_modules\node-addon-api\LICENSE.md" />
+    <None Include="tw\node_modules\node-addon-api\napi-inl.deprecated.h" />
+    <None Include="tw\node_modules\node-addon-api\napi-inl.h" />
+    <None Include="tw\node_modules\node-addon-api\napi.h" />
+    <None Include="tw\node_modules\node-addon-api\node_addon_api.gyp" />
+    <None Include="tw\node_modules\node-addon-api\node_api.gyp" />
+    <None Include="tw\node_modules\node-addon-api\noexcept.gypi" />
+    <None Include="tw\node_modules\node-addon-api\nothing.c" />
+    <None Include="tw\node_modules\node-addon-api\README.md" />
+    <None Include="tw\node_modules\node-addon-api\tools\check-napi.js" />
+    <None Include="tw\node_modules\node-addon-api\tools\clang-format.js" />
+    <None Include="tw\node_modules\node-addon-api\tools\conversion.js" />
+    <None Include="tw\node_modules\node-addon-api\tools\eslint-format.js" />
+    <None Include="tw\node_modules\node-addon-api\tools\README.md" />
+    <None Include="tw\node_modules\picocolors\LICENSE" />
+    <None Include="tw\node_modules\picocolors\picocolors.browser.js" />
+    <None Include="tw\node_modules\picocolors\picocolors.js" />
+    <None Include="tw\node_modules\picocolors\README.md" />
+    <None Include="tw\node_modules\picomatch\CHANGELOG.md" />
+    <None Include="tw\node_modules\picomatch\index.js" />
+    <None Include="tw\node_modules\picomatch\lib\constants.js" />
+    <None Include="tw\node_modules\picomatch\lib\parse.js" />
+    <None Include="tw\node_modules\picomatch\lib\picomatch.js" />
+    <None Include="tw\node_modules\picomatch\lib\scan.js" />
+    <None Include="tw\node_modules\picomatch\lib\utils.js" />
+    <None Include="tw\node_modules\picomatch\LICENSE" />
+    <None Include="tw\node_modules\picomatch\README.md" />
+    <None Include="tw\node_modules\tailwindcss\dist\chunk-AZANAYY2.mjs" />
+    <None Include="tw\node_modules\tailwindcss\dist\chunk-V2K3XTS4.mjs" />
+    <None Include="tw\node_modules\tailwindcss\dist\chunk-XOUGALJ2.mjs" />
+    <None Include="tw\node_modules\tailwindcss\dist\colors.d.mts" />
+    <None Include="tw\node_modules\tailwindcss\dist\colors.js" />
+    <None Include="tw\node_modules\tailwindcss\dist\colors.mjs" />
+    <None Include="tw\node_modules\tailwindcss\dist\default-theme.d.mts" />
+    <None Include="tw\node_modules\tailwindcss\dist\default-theme.js" />
+    <None Include="tw\node_modules\tailwindcss\dist\default-theme.mjs" />
+    <None Include="tw\node_modules\tailwindcss\dist\flatten-color-palette.d.mts" />
+    <None Include="tw\node_modules\tailwindcss\dist\flatten-color-palette.js" />
+    <None Include="tw\node_modules\tailwindcss\dist\flatten-color-palette.mjs" />
+    <None Include="tw\node_modules\tailwindcss\dist\lib.d.mts" />
+    <None Include="tw\node_modules\tailwindcss\dist\lib.js" />
+    <None Include="tw\node_modules\tailwindcss\dist\lib.mjs" />
+    <None Include="tw\node_modules\tailwindcss\dist\plugin.d.mts" />
+    <None Include="tw\node_modules\tailwindcss\dist\plugin.js" />
+    <None Include="tw\node_modules\tailwindcss\dist\plugin.mjs" />
+    <None Include="tw\node_modules\tailwindcss\dist\resolve-config-QUZ9b-Gn.d.mts" />
+    <None Include="tw\node_modules\tailwindcss\dist\types-BTRmm49E.d.mts" />
+    <None Include="tw\node_modules\tailwindcss\LICENSE" />
+    <None Include="tw\node_modules\tailwindcss\README.md" />
+    <None Include="tw\node_modules\tapable\lib\AsyncParallelBailHook.js" />
+    <None Include="tw\node_modules\tapable\lib\AsyncParallelHook.js" />
+    <None Include="tw\node_modules\tapable\lib\AsyncSeriesBailHook.js" />
+    <None Include="tw\node_modules\tapable\lib\AsyncSeriesHook.js" />
+    <None Include="tw\node_modules\tapable\lib\AsyncSeriesLoopHook.js" />
+    <None Include="tw\node_modules\tapable\lib\AsyncSeriesWaterfallHook.js" />
+    <None Include="tw\node_modules\tapable\lib\Hook.js" />
+    <None Include="tw\node_modules\tapable\lib\HookCodeFactory.js" />
+    <None Include="tw\node_modules\tapable\lib\HookMap.js" />
+    <None Include="tw\node_modules\tapable\lib\index.js" />
+    <None Include="tw\node_modules\tapable\lib\MultiHook.js" />
+    <None Include="tw\node_modules\tapable\lib\SyncBailHook.js" />
+    <None Include="tw\node_modules\tapable\lib\SyncHook.js" />
+    <None Include="tw\node_modules\tapable\lib\SyncLoopHook.js" />
+    <None Include="tw\node_modules\tapable\lib\SyncWaterfallHook.js" />
+    <None Include="tw\node_modules\tapable\lib\util-browser.js" />
+    <None Include="tw\node_modules\tapable\LICENSE" />
+    <None Include="tw\node_modules\tapable\README.md" />
+    <None Include="tw\node_modules\to-regex-range\index.js" />
+    <None Include="tw\node_modules\to-regex-range\LICENSE" />
+    <None Include="tw\node_modules\to-regex-range\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CrossCutting\CrossCutting.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="tw\node_modules\%40parcel\watcher\index.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\%40tailwindcss\node\dist\index.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\%40tailwindcss\node\dist\require-cache.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\%40tailwindcss\oxide\index.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\enhanced-resolve\types.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\jiti\lib\types.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\lightningcss\node\ast.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\lightningcss\node\index.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\lightningcss\node\targets.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\mri\index.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\picocolors\picocolors.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\picocolors\types.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\tailwindcss\dist\colors-b_6i0Oi7.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\tailwindcss\dist\colors.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\tailwindcss\dist\default-theme.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\tailwindcss\dist\flatten-color-palette.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\tailwindcss\dist\lib.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\tailwindcss\dist\plugin.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\tailwindcss\dist\resolve-config-BIFUA2FY.d.ts" />
+    <TypeScriptCompile Include="tw\node_modules\tapable\tapable.d.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+</Project>

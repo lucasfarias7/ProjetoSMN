@@ -1,0 +1,50 @@
+﻿@model SMNPastel.ViewModel.TarefaViewModel;
+
+@{
+    ViewData["Title"] = "Criar Tarefa";
+}
+
+<div class="max-w-lg mx-auto bg-white p-6 shadow-md rounded-lg">
+    <h2 class="text-2xl font-bold mb-4">Nova Tarefa</h2>
+
+    <form asp-action="CriarTarefa" asp-controller="Tarefa" method="post">
+        <input type="hidden" name="Id" value="@Model.Id">
+        @Html.AntiForgeryToken()
+        <div class="mb-4">
+            <label asp-for="Mensagem" class="block text-sm font-medium text-gray-700">Mensagem</label>
+            <input asp-for="Mensagem" class="mt-1 p-2 block w-full border border-gray-300 rounded-lg focus:ring focus:ring-blue-200" placeholder="Digite a tarefa">
+            <span asp-validation-for="Mensagem" class="text-red-500 text-sm"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="DataLimite" class="block text-sm font-medium text-gray-700">Data Limite</label>
+            <input asp-for="DataLimite" type="date" class="mt-1 p-2 block w-full border border-gray-300 rounded-lg focus:ring focus:ring-blue-200"
+                   value="@Model.DataLimite?.ToString("yyyy-MM-dd")">
+            <span asp-validation-for="DataLimite" class="text-red-500 text-sm"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="SubordinadoId" class="block text-sm font-medium text-gray-700">Subordinado</label>
+            <select asp-for="SubordinadoId" asp-items="ViewBag.Subordinados" class="mt-1 p-2 block w-full border border-gray-300 rounded-lg focus:ring focus:ring-blue-200">
+                <option value="">Selecione um subordinado</option>
+            </select>
+            <span asp-validation-for="SubordinadoId" class="text-red-500 text-sm"></span>
+        </div>
+
+        @if(Model.Id > 0)
+        {
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">
+                Editar Tarefa
+            </button>
+        }
+        else
+        {
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">
+                Criar Tarefa
+            </button>
+        }
+        
+    </form>
+</div>
+
+
